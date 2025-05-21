@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gilmanusidki - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #000;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff6b35 !important;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1584467735871-bfb5ef387ce5') center/cover no-repeat;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+    }
+
+    .btn-orange {
+      background-color: #ff6b35;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-orange:hover {
+      background-color: #e35c2f;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ff6b35;
+      margin-bottom: 40px;
+    }
+
+    .img-frame {
+      border: 4px solid #ff6b35;
+      padding: 6px;
+      border-radius: 12px;
+      display: inline-block;
+      background-color: white;
+    }
+
+    .progress-bar {
+      background-color: #ff6b35;
+    }
+
+    .btn-filter {
+      background: none;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      margin: 0 10px;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+    }
+
+    .btn-filter:hover,
+    .btn-filter.active {
+      color: #ff6b35;
+      border-bottom: 2px solid #ff6b35;
+    }
+
+    .project-img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 12px;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff6b35;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 767px) {
+      .section-title {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">GILMANUSIDKI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="hero" class="hero">
+  <h1 class="display-4 fw-bold">WEB PORTOFOLIO</h1>
+  <p class="lead">GILMANUSIDKI — Advertiser Marketplace Specialist</p>
+  <a href="#contact" class="btn btn-orange mt-3">Hubungi Saya</a>
+</header>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <div class="img-frame">
+          <img src="FOTO FORMAL 4.jpg" alt="Gilmanusidki" class="img-fluid rounded-3" style="max-height: 400px;">
+        </div>
+      </div>
+      <div class="col-md-7">
+        <p>Hello! My name is <span class="text-orange fw-semibold">Gilmanusidki</span>. I am an advertising specialist passionate about branding, campaign performance, and visual creativity.</p>
+        <p><strong>Phone:</strong> 087841576269<br>
+           <strong>Email:</strong> gilmanshidqi93@gmail.com<br>
+           <strong>Location:</strong> Tangerang Selatan</p>
+        <p><strong>Education:</strong><br>Ilmu Komputer - Sistem Informasi, Universitas Pamulang</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5 bg-black">
+  <div class="container">
+    <h2 class="section-title text-center">Skills</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Shopee Seller Centre <span class="float-end">90%</span></p>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 90%;"></div></div>
+        <p>Spreadsheet <span class="float-end">85%</span></p>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 85%;"></div></div>
+        <p>Excel <span class="float-end">85%</span></p>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 85%;"></div></div>
+        <p>Tokopedia Seller Centre <span class="float-end">90%</span></p>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 90%;"></div></div>
+      </div>
+      <div class="col-md-6">
+        <p>TikTok Seller Centre <span class="float-end">70%</span></p>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 70%;"></div></div>
+        <p>Google Ads <span class="float-end">65%</span></p>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 65%;"></div></div>
+        <p>Meta Ads <span class="float-end">80%</span></p>
+        <div class="progress mb-3"><div class="progress-bar" style="width: 80%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="mb-4">
+      <button class="btn btn-filter active" data-filter="advertising">Advertising</button>
+      <button class="btn btn-filter" data-filter="poster">Poster</button>
+    </div>
+    <div id="portfolio-description" class="text-white-50 mb-4">
+      Hasil iklan campaign untuk 3 toko utama di marketplace.
+    </div>
+    <div class="row" id="portfolio-items" style="min-height: 500px;">
+      <!-- Advertising -->
+      <div class="col-md-4 col-sm-6 portfolio-item advertising mb-4">
+        <h5 class="fw-semibold">Toko Amerta</h5>
+        <img src="AMERTA.jpg" class="project-img" alt="Toko Amerta">
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item advertising mb-4">
+        <h5 class="fw-semibold">Toko Kiosvit</h5>
+        <img src="KIOSVIT.jpg" class="project-img" alt="Toko Kiosvit">
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item advertising mb-4">
+        <h5 class="fw-semibold">Toko Giziherbal</h5>
+        <img src="GIZIHERBAL.jpg" class="project-img" alt="Toko Giziherbal">
+      </div>
+
+      <!-- Poster -->
+      <div class="col-md-4 col-sm-6 portfolio-item poster d-none mb-4">
+        <h5 class="fw-semibold">Poster Bulan 1</h5>
+        <img src="reselut design 1.jpeg" class="project-img" alt="Poster 1">
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item poster d-none mb-4">
+        <h5 class="fw-semibold">Poster Bulan 2</h5>
+        <img src="result design 2.jpeg" class="project-img" alt="Poster 2">
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item poster d-none mb-4">
+        <h5 class="fw-semibold">Poster Bulan 3</h5>
+        <img src="result design 3.jpeg" class="project-img" alt="Poster 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-5 bg-black text-white">
+  <div class="container text-center">
+    <h2 class="section-title">Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <i class="bi bi-brush fs-1 text-orange mb-3"></i>
+        <h5>Graphic Design</h5>
+        <p class="text-white-50">Creative visual assets for brand and media.</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <i class="bi bi-film fs-1 text-orange mb-3"></i>
+        <h5>Video Editing</h5>
+        <p class="text-white-50">Editing to bring stories and campaigns to life.</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <i class="bi bi-megaphone fs-1 text-orange mb-3"></i>
+        <h5>Branding</h5>
+        <p class="text-white-50">Boost recognition across platforms.</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <i class="bi bi-window fs-1 text-orange mb-3"></i>
+        <h5>Web Design</h5>
+        <p class="text-white-50">Aesthetic and responsive designs.</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <i class="bi bi-badge-ad fs-1 text-orange mb-3"></i>
+        <h5>Advertising</h5>
+        <p class="text-white-50">Maximize ROI across platforms.</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <i class="bi bi-bar-chart-line fs-1 text-orange mb-3"></i>
+        <h5>Analysis Campaign</h5>
+        <p class="text-white-50">Optimize marketing with insights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="background-color:#ff6b35;" class="text-white text-center py-5">
+  <div class="container">
+    <h2 class="section-title text-white">Contact Me</h2>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <i class="bi bi-telephone-fill fs-2 mb-2"></i>
+        <h6 class="fw-bold">Call Us On</h6>
+        <p>087841576269</p>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <i class="bi bi-envelope-fill fs-2 mb-2"></i>
+        <h6 class="fw-bold">Email Us At</h6>
+        <p>gilmanshidqi93@gmail.com</p>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <i class="bi bi-geo-alt-fill fs-2 mb-2"></i>
+        <h6 class="fw-bold">Visit Office</h6>
+        <p>Tangerang Selatan, Indonesia</p>
+      </div>
+    </div>
+    <a href="https://wa.me/6287841576269" class="btn btn-light fw-semibold px-4 py-2">SEND MESSAGE</a>
+  </div>
+</section>
+
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const filters = document.querySelectorAll('.btn-filter');
+  const items = document.querySelectorAll('.portfolio-item');
+  const description = document.getElementById('portfolio-description');
+
+  const descriptions = {
+    advertising: 'Hasil iklan campaign untuk 3 toko utama di marketplace.',
+    poster: 'Hasil desain poster bulanan dengan tema yang berbeda-beda.'
+  };
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      items.forEach(item => {
+        item.classList.add('d-none');
+        if (item.classList.contains(filter)) {
+          item.classList.remove('d-none');
+        }
+      });
+      if (description && descriptions[filter]) {
+        description.innerText = descriptions[filter];
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
